@@ -12,5 +12,10 @@ namespace JenkinsApi.Controllers
         {
             return Ok(Customername);
         }
+        [HttpGet]
+        public IActionResult GetCustomer()
+        {
+            return Ok("Farhan");
+        }
     }
 }
