@@ -12,7 +12,26 @@ namespace JenkinsApi.Controllers
         {
             return Ok(Username);
         }
-        
+        [HttpGet]
+        public IActionResult GetUser()
+        {
+            return Ok("Farhan");
+        }
+        [HttpGet]
+        public IActionResult GetUserbyid([FromQuery] int id)
+        {
+            return Ok("Farhan");
+        }
+        [HttpPut]
+        public IActionResult UpdateUserbyid([FromQuery] int id)
+        {
+            return Ok("Hello");
+        }
+        [HttpDelete]
+        public IActionResult deleteUserbyid([FromQuery] int id)
+        {
+            return Ok("Hello");
+        }
 
 
     }
