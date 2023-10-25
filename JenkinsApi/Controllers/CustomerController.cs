@@ -27,6 +27,11 @@ namespace JenkinsApi.Controllers
         {
             return Ok("Hello");
         }
+        [HttpDelete]
+        public IActionResult deleteCustomerbyid([FromQuery] int id)
+        {
+            return Ok("Hello");
+        }
 
 
     }
