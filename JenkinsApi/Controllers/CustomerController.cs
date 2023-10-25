@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace JenkinsApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class CustomerController : ControllerBase
     {
@@ -17,7 +17,12 @@ namespace JenkinsApi.Controllers
         {
             return Ok("Farhan");
         }
+        [HttpGet]
+        public IActionResult GetCustomerbyid([FromQuery] int id)
+        {
+            return Ok("Farhan");
+        }
 
-        
+
     }
 }
