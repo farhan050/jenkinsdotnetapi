@@ -22,6 +22,11 @@ namespace JenkinsApi.Controllers
         {
             return Ok("Farhan");
         }
+        [HttpPut]
+        public IActionResult UpdateCustomerbyid([FromQuery] int id)
+        {
+            return Ok("Hello");
+        }
 
 
     }
