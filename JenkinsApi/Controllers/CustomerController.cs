@@ -18,10 +18,6 @@ namespace JenkinsApi.Controllers
             return Ok("Farhan");
         }
 
-        [HttpGet]
-        public IActionResult GetCustomerbyid([FromQuery] int id)
-        {
-            return Ok("Farhan");
-        }
+        
     }
 }
